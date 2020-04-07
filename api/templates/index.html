@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>Mood Tunes</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='main/styles.css')}}">
+  </head>
+  <body>
+	<div class "mainpage" id = "mainpage">
+	
+		<div class = "header" id = "header">
+			<table>
+			<tr>
+				<td>
+				<p> Get to know your music!</p>
+				<p> Identify the mood of your song by Machine Learning Techniques... </p>
+				</td>
+				<td></td>
+				<!--<td>
+				<img src = "/images/logo.jpg" alt="logo">
+				</td>-->
+			</tr>
+			</table>
+		</div>
+		
+		<div class = "navigation" id = "navigation">
+			<button class="buttons"><a class = "anchor" href="{{ url_for('about')}}">About Project</a></button> 
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bynontranslating')}}">English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bytranslating')}}">Non-English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('index')}}">Home</a></button>
+		</div>
+		
+		<div class = "block" id = "block">
+		<center><p class = "indexpage"> Are you happy or sad? </p></center>
+		<table>
+		<tr> 
+		<td> </td>  <td>  </td>  <td>  </td>
+		<td>
+			<marquee direction = "up"> <span style='font-size:350px;'>&#128516;</span> </marquee>
+		</td>
+		<td> </td>  <td>  </td>  <td>  </td>
+		<td>
+			<marquee direction = "up"> <span style='font-size:350px;'>&#128542; </marquee></span> 
+		</td>
+		</tr>
+		</table>
+		</div>
+	</div>
+  </body>
+</html>

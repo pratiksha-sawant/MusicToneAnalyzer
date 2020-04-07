@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>K3G Music</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='main/styles.css')}}">
+	</head>
+  <body>
+		{% if error %}
+         <p><strong>Error:</strong> {{ error }}
+		{% endif %}
+		<form method="post">
+		{{ form.hidden_tag() }}
+		{{ form.example }}
+		<input type="submit">
+</form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>Mood Tunes</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='main/styles.css')}}">
+  </head>
+  <body>
+	<div class "mainpage" id = "mainpage">
+	
+		<div class = "header" id = "header">
+			<table>
+			<tr>
+				<td>
+				<p> Get to know your music!</p>
+				<p> Identify the mood of your song by Machine Learning Techniques... </p>
+				</td>
+				<td></td>
+				<!--<td>
+				<img src = "/images/logo.jpg" alt="logo">
+				</td>-->
+			</tr>
+			</table>
+		</div>
+		
+		<div class = "navigation" id = "navigation">
+			<button class="buttons"><a class = "anchor" href="{{ url_for('about')}}">About Project</a></button> 
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bynontranslating')}}">English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bytranslating')}}">Non-English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('index')}}">Home</a></button>
+		</div>
+		
+		<div class = "block" id = "block">
+			<p class= "textual">Hello everyone!</p>
+			<p></p>
+			<p class= "textual"> 
+			I am a Graduate student at Northeastern University intrigued by data power and looking forward for a change in career path into the field of Data Sciecne.
+			The application is developed from my current understanding of data pre-processing, analytics and data sciecne just to get a hold of all these concepts!
+			</p>
+			<p></p>
+			<p class = "textual">
+			With the advancement in different technologies Machine Learning is slowly getting involved in every possible domain and so is in the music industry.
+			Our objective behind building moodtunes is to deteremine the mood of any hindi/english song as happy or sad by using machine learning techniques and performing sentiment analysis on lyrics.
+			The application is constructed such that it could identify the mood with the help of a Logistic Regression classifier which is Hypertunned for better performance.
+			</p>
+			<p></p>
+			<p class= "textual">Try out the tabs above and get to know about this project!!!</p>
+		</div>
+	</div>
+  </body>
+</html>

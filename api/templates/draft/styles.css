@@ -1,0 +1,184 @@
+body {
+  background-image: url("images/bg1.jpg");
+}
+
+td{
+	padding: 5px;
+	height: 50px;
+	text-align: left;
+	font-style: normal;
+	font-size: 18px;
+	font-stretch: normal;
+	font-family: Georgia, Times, Times New Roman, serif
+}
+
+input[type=number]{
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-stretch: normal;
+	font-family: Times New Roman, Times,serif;
+	border: 2px solid;
+	width: 130px	
+}
+
+input[type=submit]{
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-family: Georgia, Times, Times New Roman, serif;
+	width: 150px;
+	border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #555555;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.header{
+	/*background-image: url("images/header.png");*/
+	background-color:Tomato;
+	height: 100px;
+	border:ridge;
+	display: block;
+	border-color:LightGray;
+	width:870px;
+	height:100px;
+	border-radius: 4px;
+}
+
+.logo{
+	display: inline-block;
+	background-image: url("images/logo.jpg");
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	width: 300px;	
+	vertical-align:top-right;
+}
+
+.subheader{
+	color:white ;
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border: 2px solid transparent;
+	width: 600px;
+	font-size: 30px;
+	font-stretch: normal;
+	font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+	font-style: bold;
+}
+
+.label{
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-stretch: normal;
+	font-family: Georgia, Times, Times New Roman, serif;
+	font-style: bold;
+}
+
+.dropdown{
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-stretch: normal;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	border: 2px dashed;
+	border-radius: 4px;
+	width: 850px
+}
+
+.container{
+	background-color: #FFFFFF;
+	border-color: Tomato;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-stretch: normal;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	border: 2px dashed;
+	border-radius: 4px;
+	width: 850px;
+}
+
+.countries{
+	width: 150px;
+    height: 50px;
+	border: 2px solid;
+	font-size: 15px;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-stretch: normal;
+}
+
+.noOfSongs{
+	width: 150px;
+    height: 50px;
+	border: 2px solid;
+	font-size: 15px;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-stretch: normal;
+}
+
+table.list td{
+	padding: 20px;
+	height: 30px;
+	text-align: center;
+	font-style: normal;
+	font-size: 15px;
+	font-stretch: normal;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;	
+}
+
+table.tone td{
+	padding: 20px;
+	height: 30px;
+	text-align: center;
+	font-style: normal;
+	font-size: 15px;
+	font-stretch: normal;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.emo{
+	font-size:50px;
+}
+
+.err{
+	text-align: center;
+	font-style: normal;
+	font-size: 25px;
+	font-stretch: normal;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.songs{
+	width: 150px;
+    height: 50px;
+	border: 2px solid;
+	font-size: 15px;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-stretch: normal;
+}
+

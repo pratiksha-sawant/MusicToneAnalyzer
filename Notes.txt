@@ -1,0 +1,28 @@
+May 4
+**************
+Links for reference
+
+https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62
+
+https://developers.google.com/machine-learning/guides/text-classification/step-3
+
+https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
+
+May 5
+***************
+https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
+
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+
+https://medium.com/machine-learning-101/chapter-3-decision-trees-theory-e7398adac567
+
+https://medium.com/machine-learning-101/chapter-5-random-forest-classifier-56dc7425c3e1
+
+https://chrisalbon.com/machine_learning/model_selection/hyperparameter_tuning_using_grid_search/
+
+
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+
+https://www.datacamp.com/community/tutorials/pickle-python-tutorial
+
+https://www.geeksforgeeks.org/saving-a-machine-learning-model/

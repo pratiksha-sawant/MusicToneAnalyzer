@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>Mood Tunes</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='main/styles.css')}}">
+  </head>
+  <body>
+	<div class "mainpage" id = "mainpage">
+	
+		<div class = "header" id = "header">
+			<table>
+			<tr>
+				<td>
+				<p> Get to know your music!</p>
+				<p> Identify the mood of your song by Machine Learning Techniques...</p>
+				</td>
+				<td></td>
+				<!--<td>
+				<img src = "/images/logo.jpg" alt="logo">
+				</td>-->
+			</tr>
+			</table>
+		</div>
+		
+		<div class = "navigation" id = "navigation">
+			<button class="buttons"><a class = "anchor" href="{{ url_for('about')}}">About Project</a></button> 
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bynontranslating')}}">English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('bytranslating')}}">Non-English Songs</a></button>
+			<button class="buttons"><a class = "anchor" href="{{ url_for('index')}}">Home</a></button>
+		</div>
+		
+		<div class = "block" id = "block">
+			<div class = "content">
+			{% if methods == 'GET' %}
+				<table>
+				<tr>
+					<td></td>
+					<td>
+						<p class = "textual" id="textual"> Enter Lyrics of any English Song</p>
+					</td>
+				<!--<p> </p> <p> </p>-->
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+							<form action="/english" method = "POST">
+							<textarea name="lyrics" rows="25" cols="65" class = "lyricstext" required></textarea><br>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Submit">
+						</form>
+					</td>
+				</tr>
+						
+				</table>
+			{% endif %}
+			
+			{% if methods == 'POST' %}
+			
+				<table>
+				<tr>
+				<td></td>
+				<td> <p class = "textual" id="textual"> Lyrics </p></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<textarea name="lyrics" rows="25" cols="65" class = "lyricstext" readonly > {{lyrics}}</textarea><br>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						{% if prediction == 1%}
+							<p class = "textual"> It's a {{probability}} % Sad song!!! </p>
+							<span style='font-size:100px;'>&#128542;</span>
+						{% elif prediction == 0%}
+							<p class = "textual"> It's a {{probability}} % Happy song!!</p>
+							<span style='font-size:100px;'>&#128516;</span>
+						{% endif %}
+					</td>
+				</tr>
+					
+				</table>
+			
+			{% endif %}
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

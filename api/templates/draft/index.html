@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>K3G Music</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='main/styles.css')}}">
+	</head>
+  <body>
+	<script type="text/javascript">
+		function OtherNum(val){
+			var element=document.getElementById('inpt');
+			if(val=='Other')
+				element.style.display='block';
+			else  
+				element.style.display='none';
+		}
+		
+		function validateForm() 
+		{
+			var cntry = document.forms["myForm"]["countries"].value;
+			var num = document.forms["myForm"]["noOfSongs"].value;
+			var oth = document.getElementById('inpt').value;
+			
+			if (cntry == " ") {
+				alert("Please select a Country");
+			return false;
+			}
+			
+			if (num == " ") {
+				alert("Please select the number of songs");
+			return false;
+			}
+			
+			if (num == "Other") {	
+				if(oth == "")
+				{
+					alert("Please give input!");
+					return false;
+				}
+				else if(oth <=0)
+				{
+					alert("Please give a valid input!");
+					return false;
+				}
+			}
+		}
+	</script>
+	
+	<div class = 'header'>
+		<div class = "subheader">
+			<p> <b>K3G Music Tone Analyzer<b> </p>
+		</div>
+	</div>
+	
+	<p></p>
+	
+	<div class = "dropdown">
+    <form action="/result" method="post" name = "myForm" onsubmit="return validateForm()">
+      <table>
+        <tr>
+          <td name = "indx">Country</td>
+			<td name = "indx">
+				<select name= countries class = "countries">
+					<option value=" " selected>select</option>
+					<option value= "au">Australia</option>
+					<option value= "ca">Canada</option>
+					<option value= "uk">UK</option>
+				</select>
+			</td>
+        </tr>
+		<tr></tr>
+        <tr>
+          <td name = "indx">Number of Songs</td>
+			<td name = "indx">
+				<select name= noOfSongs class="noOfSongs" onchange="OtherNum(this.value);">
+					<option value=" " selected>select</option>
+					<option value= "5">5</option>
+					<option value= "10">10</option>
+					<option value= "15">15</option>
+					<option value= "20">20</option>
+					<option value="Other">Other</option>
+				</select>
+			</td>
+        </tr>
+		<tr></tr>
+		<tr> <td></td> <td> <input type="number" name="otherText" id="inpt" style='display:none;'> </td></tr>
+		<tr></tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="submit" value="Click">
+          </td>
+        </tr>
+      </table>
+    </form>
+	</div>
+  </body>
+</html>
