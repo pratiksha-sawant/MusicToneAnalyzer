@@ -1,1 +1,2 @@
 web: gunicorn deploy:WebApplication.py
+heroku ps:scale web=1
