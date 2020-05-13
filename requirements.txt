@@ -4,7 +4,5 @@ requests
 flask_wtf
 wtforms
 nltk
-os
-re
 sklearn
 pandas
