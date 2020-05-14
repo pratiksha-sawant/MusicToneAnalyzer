@@ -6,3 +6,4 @@ wtforms
 nltk
 sklearn
 pandas
+regex
