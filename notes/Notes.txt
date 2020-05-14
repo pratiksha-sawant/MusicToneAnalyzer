@@ -26,3 +26,5 @@ https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticR
 https://www.datacamp.com/community/tutorials/pickle-python-tutorial
 
 https://www.geeksforgeeks.org/saving-a-machine-learning-model/
+
+https://www.youtube.com/watch?v=sqJSdJbOOU0
