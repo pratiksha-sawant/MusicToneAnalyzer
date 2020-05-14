@@ -128,6 +128,6 @@ def bytranslating():
         return render_template('translator.html', methods=methods,prediction = my_prediction,lyrics=song, probability=prob)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 #host='0.0.0.0'
 
