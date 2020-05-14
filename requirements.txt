@@ -9,4 +9,3 @@ pandas
 regex
 joblib
 googletrans
-stopwords
