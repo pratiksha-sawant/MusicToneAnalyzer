@@ -23,7 +23,9 @@ https://songmoodanalyzer.herokuapp.com/
 
 •	regex
 
-•	pandas_ml
+•	joblib
 
 •	wordcloud
+
+•	googletrans
 
