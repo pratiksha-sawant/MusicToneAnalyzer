@@ -1,5 +1,6 @@
 body {
-  background-image: url("images/web.jpg");
+  /*background-image: url("images/web.jpg");*/
+    body {background-color: black;}
 }
 
 .indexpage{
@@ -24,8 +25,8 @@ body {
 }
 
 .header{
-	background-image: url("images/header1.jpg");
-	/*background-color : #7FFFD4;*/
+	/*background-image: url("images/header1.jpg");*/
+	background-color : #7FFFD4;
 	position: relative;
 	top: 50px;
 	left: 120px;
