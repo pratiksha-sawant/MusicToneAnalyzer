@@ -7,3 +7,5 @@ nltk
 sklearn
 pandas
 regex
+joblib
+googletrans

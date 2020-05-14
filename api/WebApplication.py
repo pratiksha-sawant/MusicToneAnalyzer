@@ -10,7 +10,8 @@ import requests as rq
 from flask_wtf import Form
 from wtforms import RadioField
 from wtforms import validators, ValidationError
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from nltk.corpus import stopwords
