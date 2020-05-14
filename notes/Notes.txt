@@ -27,4 +27,6 @@ https://www.datacamp.com/community/tutorials/pickle-python-tutorial
 
 https://www.geeksforgeeks.org/saving-a-machine-learning-model/
 
+https://medium.com/@gitaumoses4/deploying-a-flask-application-on-heroku-e509e5c76524
+
 https://www.youtube.com/watch?v=sqJSdJbOOU0
