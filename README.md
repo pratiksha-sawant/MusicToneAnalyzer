@@ -22,36 +22,37 @@ https://github.com/rasbt/musicmood/blob/master/dataset/validation/valid_lyrics_2
 
 # Installation
 ****************************************
-•	pandas
+•	pip install pandas
 
-•	numpy
+•	pip install numpy
 
-•	matplotlib
+•	pip install matplotlib
 
-•	seaborn
+•	pip install seaborn
 
-•	sklearn
+•	pip install sklearn
 
-•	nltk
+•	pip install nltk
 
-•	regex
+•	pip install regex
 
-•	joblib
+•	pip install joblib
 
-•	wordcloud
+•	pip install wordcloud
 
-•	googletrans
+•	pip install googletrans
 
 # Heroku deployment
 ****************************************
-pip install gunicorn
+• pip install gunicorn
 
+### Steps
 
 •	create a Procfile which consists of web: gunicorn api.<filename>:<main webapp function>
 
 •	create a requirements.txt i.e. list of all the packages which needs to be installed
 
-Note for nltk create a separate file name 'nltk.txt' and list all the nltk packages used in the webapp
+•	*note for nltk create a separate file name 'nltk.txt' and list all the nltk packages used in the webapp*
 
 •	create a application on heroku and link it with the git repository
 
