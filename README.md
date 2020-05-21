@@ -48,7 +48,7 @@ https://github.com/rasbt/musicmood/blob/master/dataset/validation/valid_lyrics_2
 
 ### Steps
 
-•	create a Procfile which consists of web: gunicorn api.<filename>:<main webapp function>
+•	create a Procfile which consists of web: gunicorn api.filename: main webapp function
 
 •	create a requirements.txt i.e. list of all the packages which needs to be installed
 
