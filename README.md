@@ -1,6 +1,6 @@
 # Song Mood Analyzer (Sentiment Analysis)
 *****************************************
-A web application (REST API) built in Flask to take input of song lyrics and classify it’s mood by identifying lyrics as happy/sad with supervised machine learning model.
+A web application built in Flask to take input of song lyrics and classify it’s mood by identifying lyrics as happy/sad with supervised machine learning model.
 
 # Web App
 *******************************
